@@ -10,10 +10,13 @@
   <title>MJUw</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
-
-
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://www.mju.ac.th/main/images/small.ico">
+
 
   <style>
     .bd-placeholder-img {
@@ -31,10 +34,11 @@
       }
     }
 
-    .picturesiz {
-      position: relative;
+    .pd {
       background-position: center;
       background-size: cover;
+      width: auto;
+      height: auto;
     }
   </style>
 
@@ -46,7 +50,7 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
       <div class="container-fluid">
         <a class="navbar-brand" href="mju.html">MaeJo University</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -95,38 +99,39 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="container">
+          <div class="container-fluid">
             <img class="img-fluid" src="img/slide1.jpg">
           </div>
+
         </div>
 
         <div class="carousel-item">
-          <div class="container">
-            <img class="img-fluid" src="img/slide2.jpg">
+          <div class="container-fluid">
+            <img class="pd img-fluid" src="img/slide2.jpg">
           </div>
         </div>
 
         <div class="carousel-item">
-          <div class="container">
-            <img class="img-fluid" src="img/slide3.jpg">
+          <div class="container-fluid">
+            <img class="pd img-fluid" src="img/slide3.jpg">
           </div>
         </div>
 
         <div class="carousel-item">
-          <div class="container">
-            <img class="img-fluid" src="img/slide4.jpg">
+          <div class="container-fluid">
+            <img class="pd img-fluid" src="img/slide4.jpg">
           </div>
         </div>
 
         <div class="carousel-item">
-          <div class="container">
-            <img class="img-fluid" src="img/slide5.jpg">
+          <div class="container-fluid">
+            <img class="pd img-fluid" src="img/slide5.jpg">
           </div>
         </div>
 
         <div class="carousel-item">
-          <div class="container">
-            <img class="img-fluid" src="img/slide6.jpg">
+          <div class="container-fluid">
+            <img class="pd img-fluid" src="img/slide6.jpg">
           </div>
         </div>
 
@@ -145,7 +150,7 @@
     <!-- Marketing messaging and featurettes
   ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
+    <hr class="featurette-divider">
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
@@ -157,7 +162,8 @@
 
           <h2>ข่าวสารและกิจกรรม</h2>
           <p>แหล่งรวมรวมข่าวสารและกิจกรรมของมหาวิทยาลัยแม่โจ้</p>
-          <p><a class="btn btn-secondary" href="https://erp.mju.ac.th/informationIndex.aspx?tid=7" role="button">ดูรายละเอียด &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="https://erp.mju.ac.th/informationIndex.aspx?tid=7"
+              role="button">ดูรายละเอียด &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4">
@@ -167,16 +173,63 @@
 
           <h2>MJU Channel</h2>
           <p>สดทุกวันทันทุกเหตุการณ์ กับทีมงานสถานีข่าว MJU Channel</p>
-          <p><a class="btn btn-secondary" href="https://mjuchannel.mju.ac.th/" role="button">ดูรายละเอียด &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="https://mjuchannel.mju.ac.th/" role="button">ดูรายละเอียด &raquo;</a>
+          </p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <div class="container rounded-circle">
             <img class="img-fluid" src="img/MJU LINK.png" width="140" height="140">
           </div>
 
+
           <h2>MJU LINK</h2>
           <p>รวมลิ้งต่าง ๆ ของทางมหาวิทยาลัยแม่โจ้</p>
-          <p><a class="btn btn-secondary" href="#" role="button">ดูรายละเอียด &raquo;</a></p>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              MJU LINK
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="https://www.mju.ac.th/main/person_page.html">บุคลากร</a></li>
+              <li><a class="dropdown-item" href="https://www.mju.ac.th/main/Welcome_MJU.html">สมัครเข้าเรียน</a></li>
+              <li><a class="dropdown-item" href="https://www.mju.ac.th/main/Alumni_Page.html">ศิษย์เก่า</a></li>
+              <li><a class="dropdown-item" href="https://erp.mju.ac.th/complaintIndex.aspx?fbclid=IwAR2wwGHq-yCXq5R9GyEc-HFYR_C45v2FeshWgLfBc011zgAmiHB2eqbTHaE">นักศึกษา</a></li>
+              <li><a class="dropdown-item" href="http://www.library.mju.ac.th/">ห้องสมุดกลาง</a></li>
+              <li><a class="dropdown-item" href="https://it.mju.ac.th/">IT CENTER</a></li>
+              <li><a class="dropdown-item" href="http://www.e-manage.mju.ac.th/satisfyQuestionaireAssess.aspx?ID=365">แบบสำรวจเว็บไซต์</a></li>
+              <li><a class="dropdown-item" href="https://rspg.mju.ac.th/">โครงการอนุรักษ์พันธุกรรมพืช</a></li>
+              <li><a class="dropdown-item" href="http://personnel.mju.ac.th/vinai.php">ประกาศ ระเบียบ ข้อบังคับ</a></li>
+              <li><a class="dropdown-item" href="https://sites.google.com/view/mjuita/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81">เอกสารเผยแพร่</a></li>
+              <li><a class="dropdown-item" href="https://erp.mju.ac.th/presidentBoard_index.aspx?fbclid=lwAR2JrjLECzt78J1uvL0t8hysVtRZ1CGoTlDrG7bEWvmtCgsoS204Qm8jYaw">สายตรงอธิการบดี</a></li>
+              <li><a class="dropdown-item" href="https://erp.mju.ac.th/complaintIndex.aspx?fbclid=IwAR2wwGHq-yCXq5R9GyEc-HFYR_C45v2FeshWgLfBc011zgAmiHB2eqbTHaE">ศูนย์รับข้อร้องเรียน</a></li>
+            </ul>
+          </div>
+          <!-- <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              MJU LINK
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                
+                
+                
+            </div>
+          </div> -->
+          <!-- <select class="btn btn-secondary">
+            <option href="#">นักศึกษา</option>
+            <option href="#" >บุคลากร</option>
+            <option href="#" >สมัครเข้าเรียน</option>
+            <option href="#" >ศิษย์เก่า</option>
+            <option href="#" >ห้องสมุดกลาง</option>
+            <option href="#" >IT CENTER</option>
+            <option href="#" >แบบสำรวจเว็บไซต์</option>
+            <option href="#" >โครงการอนุรักษ์พันธุกรรมพืช</option>
+            <option href="#" >ประกาศ ระเบียบ ข้อบังคับ</option>
+            <option href="#" >เอกสารเผยแพร่</option>
+            <option href="#" >สายตรงอธิการบดี</option>
+            <option href="https://erp.mju.ac.th/complaintIndex.aspx?fbclid=IwAR2wwGHq-yCXq5R9GyEc-HFYR_C45v2FeshWgLfBc011zgAmiHB2eqbTHaE" >ศูนย์รับข้อร้องเรียน</option>
+          </select> -->
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -187,13 +240,14 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">UI GreenMetric World University Rankings on Sustainability 2019 <span class="text-muted"></span>
+          <h2 class="featurette-heading">UI GreenMetric World University Rankings on Sustainability 2019 <span
+              class="text-muted"></span>
           </h2>
           <p class="lead"></p>
         </div>
         <div class="col-md-5">
           <a href="https://erp.mju.ac.th/openFile.aspx?id=MzkxODQ2&method=inline">
-          <img class="img-fluid" src="img/ranking2019.png" width="500" height="500"></a>
+            <img class="img-fluid" src="img/ranking2019.png" width="500" height="500"></a>
 
         </div>
       </div>
@@ -203,10 +257,14 @@
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
           <h2 class="featurette-heading">ดอกไม้งาม ณ ฟาร์มแม่โจ้ <span class="text-muted"></span></h2>
-          <p class="lead">งานดอกไม้งาม ณ ฟาร์มแม่โจ้  สำนักฟาร์มมหาวิทยาลัยจัดขึ้นเพื่อร่วมฉลองครบรอบ 25 ปี สำนักฟาร์มมหาวิทยาลัย และประชาสัมพันธ์ฟาร์มมหาวิทยาลัยให้เห็นสถานที่ท่องเที่ยว พักผ่อน แห่งใหม่ของจังหวัดเชียงใหม่ ป่าใกล้เมืองที่สมบูรณ์ที่สุด พร้อมเปิดให้บริการตั้งแต่บัดนี้ถึงเดือนกุมภาพันธ์ 2564</p>
+          <p class="lead">งานดอกไม้งาม ณ ฟาร์มแม่โจ้ สำนักฟาร์มมหาวิทยาลัยจัดขึ้นเพื่อร่วมฉลองครบรอบ 25 ปี
+            สำนักฟาร์มมหาวิทยาลัย และประชาสัมพันธ์ฟาร์มมหาวิทยาลัยให้เห็นสถานที่ท่องเที่ยว พักผ่อน
+            แห่งใหม่ของจังหวัดเชียงใหม่ ป่าใกล้เมืองที่สมบูรณ์ที่สุด พร้อมเปิดให้บริการตั้งแต่บัดนี้ถึงเดือนกุมภาพันธ์
+            2564</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <a href="https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.cowboyfarm.mju.ac.th%2F%3Ffbclid%3DIwAR07PYmu4f59nfBUQ4YkNeLsEsht2oHQoozlEo3Pr21OMe0VjDWSWGZgsdk&h=AT0BbXdmdO2THWf07MiAqjO6ArS2XUDFIgBoEZpWzmJbZoGF5c7Xnai9F-ffIfmbA0owEzor9K54OGiWU8qDsCjzqniTIUuojBuFrev-b_6ifiAM2nHkVxkYvcOvzbqprAV4ZYgtGmdGq8RcZAbH_A">
+          <a
+            href="https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.cowboyfarm.mju.ac.th%2F%3Ffbclid%3DIwAR07PYmu4f59nfBUQ4YkNeLsEsht2oHQoozlEo3Pr21OMe0VjDWSWGZgsdk&h=AT0BbXdmdO2THWf07MiAqjO6ArS2XUDFIgBoEZpWzmJbZoGF5c7Xnai9F-ffIfmbA0owEzor9K54OGiWU8qDsCjzqniTIUuojBuFrev-b_6ifiAM2nHkVxkYvcOvzbqprAV4ZYgtGmdGq8RcZAbH_A">
             <img class="img-fluid" src="img/farm.jpg" width="500" height="500"></a>
 
         </div>
@@ -240,14 +298,24 @@
 
 
     <!-- FOOTER -->
-    <div class="footer2 font-14 bg-dark">
+    <div class="footer2 font-14 bg-success">
 
-  
-      <div class="f2-middle m-t-30 footer3">
+      <!-- <div class="col-6 " style="font-family: Kanit;">
+        <div class="d-flex">
+          <a id="wucFooter_hlHome" href="https://www.mju.ac.th/main/">
+              <img src="img/maejo.png" class="img-fluid" width="100" height="100"></a>
+          <div class="col-6">
+              <span class="text-white">Copyright © 2019 MaeJo University, All rights reserved.</span>
+              <br>
+                    by Information Technology Service Center
+          </div>
+      </div>
+    </div> -->
+      <!-- <div class="f2-middle m-t-30 footer3">
           <div class="container">
-              <div class="row">
-                  <!-- Column -->
-                  <div class="col-lg-4 col-md-6 ">
+              <div class="row"> -->
+      <!-- Column -->
+      <!-- <div class="col-lg-4 col-md-6 ">
                       <h5 class="text-white m-20" style="font-family: Kanit;">
                           <span id="wucFooter_lbHeader_Contact">ติดต่อมหาวิทยาลัย</span></h5>
                       <ul class="general-listing">
@@ -272,13 +340,15 @@
                           
                       </ul>
                   </div>
+
+                  
                   
                   
               </div>
           </div>
-      </div>
+      </div> -->
 
-      <div class="f2-topbar container ">
+      <!-- <div class="f2-topbar container ">
         <div class="d-flex ">
             <a id="wucFooter_hlHome" href="https://www.mju.ac.th/main/">
                 <img src="img/maejo.png" class="img-fluid col-2" width="100" height="100"></a>
@@ -288,15 +358,78 @@
                       by Information Technology Service Center
             </div>
         </div>
+    </div> -->
+      <!-- <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <img class="img-fluid" src="img/maejo.png" width="100" height="100">
+        <span class="text-white ">มหาวิทยาลัยแม่โจ้ 63 หมู่ 4 ต.หนองหาร อ.สันทราย จ.เชียงใหม่ 50290</span>
+          <br>
+          โทรศัพท์ : 053 873000 โทรสาร : 053 873015 maejo@mju.ac.th | MJU Map แผนที่มหาวิทยาลัย
+    </footer> -->
+      <footer class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md">
+
+            <title>Product</title>
+            <img class="img fuild" src="img/maejo.png" width="100px" height="100px">
+
+            <small class="d-block mb-3 text-white">&copy; MaeJo University</small>
+          </div>
+          <div class="col-6 col-md text-white">
+            <h5>หน้าหลัก</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-white" href="aboutmju.html">เกี่ยวกับมหาวิทยาลัย</a></li>
+              <li><a class="link-secondary text-white" href="organmju.html">หน่วยงาน</a></li>
+              <li><a class="link-secondary text-white" href="http://www.education.mju.ac.th/www/">การศึกษา</a></li>
+              <li><a class="link-secondary text-white" href="research.html">วิจัยและบริการวิชาการ</a></li>
+              <li><a class="link-secondary text-white" href="lifemju.html">รอบรั้วมหาวิทยาลัย</a></li>
+              <li><a class="link-secondary text-white" href="https://www.mju.ac.th/main/ita/forum.html">Q & A</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md text-white">
+            <h5>ข่าว</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-white"
+                  href="https://erp.mju.ac.th/informationIndex.aspx?tid=7">ข่าวกิจกรรม</a></li>
+              <li><a class="link-secondary text-white"
+                  href="https://erp.mju.ac.th/informationIndex.aspx?tid=12">ข่าวประกาศทั่วไป</a></li>
+              <li><a class="link-secondary text-white"
+                  href="https://erp.mju.ac.th/informationIndex.aspx?tid=8">ข่าวรับสมัครงาน</a></li>
+              <li><a class="link-secondary text-white"
+                  href="https://erp.mju.ac.th/informationIndex.aspx?tid=11">ข่าวประกวดราคา</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md text-white">
+            <h5>วิทยาเขต</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-white" href="https://phrae.mju.ac.th/">มหาวิทยาลัยแม่โจ้ -
+                  แพร่เฉลิมพระเกียรติ</a></li>
+              <li><a class="link-secondary text-white" href="https://chumphon.mju.ac.th/">มหาวิทยาลัยแม่โจ้ - ชุมพร</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md text-white">
+            <h5>สื่อออนไลน์</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-white" href="https://mooc.mju.ac.th/">MJU CHANNEL</a></li>
+              <li><a class="link-secondary text-white" href="http://www.mjuradio.com/">MJU Radio</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
-  
-  </div>
   </main>
 
 
-  <script src="js/bootstrap.bundle.min.js"></script>
 
 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
